@@ -6,8 +6,12 @@ import java.io.InputStream;
 
 public class FileReader {
 
-    public static InputStream getStream(String path) throws FileNotFoundException {
-        return new FileInputStream(path);
+    public static InputStream getStream(String path) {
+        try {
+            return new FileInputStream(path);
+        } catch (FileNotFoundException e) {
+            throw new com.luxoft.FileNotFoundException("File with path: " + path + " not found.", e);
+        }
     }
 
 }
