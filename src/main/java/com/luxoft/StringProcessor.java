@@ -16,7 +16,7 @@ public class StringProcessor {
         }
         return counter;
     }
-/*
+/* Не осилил регулярки
     public static List<String> findSentences(String content, String word) {
         var pattern = Pattern.compile("^|[.?!]\\s(\\p{Upper}.[^.?!]*" + word + ".[^.?!]*[.?!])", Pattern.CASE_INSENSITIVE);
         var matcher = pattern.matcher(content);
