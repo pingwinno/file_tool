@@ -34,9 +34,8 @@ public class StringProcessor {
  */
 
     public static List<String> findSentences(String content, String word) {
-        return Arrays.stream(content.split("[.?!]"))
+        return Arrays.stream(content.split("[.?!] "))
                 .filter(sentence -> sentence.contains(word))
-                .map(String::trim)
                 .collect(Collectors.toList());
     }
 }
