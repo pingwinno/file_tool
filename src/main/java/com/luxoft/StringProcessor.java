@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
-public class StringProcessor {
+public class StringProcessor extends Error{
+    //TODO: Вынесты паттерны в константы
     public static int countWords(String content, String word) {
         var pattern = Pattern.compile(word, Pattern.CASE_INSENSITIVE);
         var matcher = pattern.matcher(content);
