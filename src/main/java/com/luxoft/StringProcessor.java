@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
-//TODO: Добавить простенькую валидацию на текст
+
 public class StringProcessor {
     public static int countWords(String content, String word) {
         var pattern = Pattern.compile(word, Pattern.CASE_INSENSITIVE);
